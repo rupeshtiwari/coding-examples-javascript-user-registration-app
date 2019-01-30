@@ -1,0 +1,17 @@
+{
+  "name": "register",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "http-server src -c-1 -p 8010 -o",
+    "start": "browser-sync start --proxy \"http://172.31.182.209:8010\" -w --files \"src/**/*.*\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "http-server": "^0.11.1"
+  }
+}
