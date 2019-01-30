@@ -8,5 +8,8 @@ To start app run `npm start` or `Ctrl+B`
 
 ## Compatibility
 
-It will not support any `ES6` Features. This app is more of `ES5` oriented javascript.
-No modules no `ES6` Features supported.
+It will not support any `ES6` Features
+This app is more of `ES5` oriented javascript
+No modules no `ES6` Features supported
+No routing is supported
+Just single html file support
