@@ -1,4 +1,4 @@
-# Welcome to the starter app
+# Welcome to the Javascript HTML CSS jQery starter app
 
 Starter app for learning `javascript,jquery,css` project.
 
