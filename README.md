@@ -20,8 +20,9 @@ Open `command promt or powershell or visual studio code terminal` and run below 
 
 ## Start
 
-To start app run `npm start` or `Ctrl+B` it will launch a browser.
-It will watch any file changes inside the `src` folder and refresh your browser automatically.
+To start app, go to the `Training-JavaScript-App-Starter` open the folder in `visual studio code` or your favorite editor. 
+Open Terminal from `vscode` then run `npm start` or `Ctrl+B`.
+It will launch a browser and watch any file changes inside the `src` folder and refresh your browser automatically.
 
 ## Compatibility
 
