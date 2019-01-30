@@ -6,21 +6,22 @@ Starter app for learning `javascript,jquery,css` project.
 
 Open `command promt or powershell or visual studio code terminal` and run below script to get this project at your box
 
-- Download the code to your box
+- Run below script to download the code to your box
 
         git clone https://github.com/roopkt/Training-JavaScript-App-Starter.git
 
-- Once clone is done then run below script to navigate to the created folder
+- Run below script to navigate to the created folder
 
         cd Training-JavaScript-App-Starter
 
-- Then Run npm install to get all node packages installed by running below script
+- Run below script to get all node packages installed
 
         npm i
 
 ## Start
 
-To start app run `npm start` or `Ctrl+B`
+To start app run `npm start` or `Ctrl+B` it will launch a browser.
+It will watch any file changes inside the `src` folder and refresh your browser automatically.
 
 ## Compatibility
 
