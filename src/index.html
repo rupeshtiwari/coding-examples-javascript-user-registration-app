@@ -16,10 +16,23 @@
 
   <body class="container">
     <form class="form">
-       <!-- div.form-group>label{Name:}+input.form-control#name -->
-       <div class="form-group"><label for="">Name:</label><input type="text" class="form-control" id="name"></div>  
+      <!-- div.form-group>label{Name:}+input.form-control#name -->
+      <div class="form-group">
+        <label for="">Name:</label
+        ><input type="text" class="form-control" id="name" />
+      </div>
+
+      <div class="form-group">
+        <label for="">Email: </label
+        ><input type="text" class="form-control" id="emailId" />
+      </div>
     </form>
-    <button class="btn btn-primary">Hello</button>
-    <script src="app/main.js"></script>
+    <button class="btn btn-primary" id="userSubmit">Submit</button>
+    <script src="app/user.js"></script>
+    <script src="app/messages.js"></script>
+    <script src="app/store.js"></script>
+
+    <script src="app/user-controller.js"></script>
+    <script src="app/user-validator.js"></script>
   </body>
 </html>

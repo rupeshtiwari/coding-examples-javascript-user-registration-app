@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "serve": "http-server src -c-1 -p 8010 -o",
-    "sync": "browser-sync start --proxy \"http://172.31.182.209:8010\" -w --files \"src/**/*.*\"",
+    "sync": "browser-sync start --proxy \"http://localhost:8010\" -w --files \"src/**/*.*\"",
     "start": "concurrently \"npm:serve\" \"npm:sync\""
   },
   "keywords": [],
