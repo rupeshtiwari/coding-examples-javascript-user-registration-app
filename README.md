@@ -4,6 +4,13 @@ Starter app for learning `javascript,jquery,css` project.
 
 ## First Time
 
+Before getting this project make sure you installed `NodeJS` in your machine. To confirm it is installed run below command on command promt 
+
+ - Run below script to know Node.js Version
+        `node -v` 
+ - Run below script to know npm Version
+        `npm -v` 
+      
 Open `command promt or powershell or visual studio code terminal` and run below script to get this project at your box
 
 - Run below script to download the code to your box
