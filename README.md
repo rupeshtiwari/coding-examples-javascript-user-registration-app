@@ -22,6 +22,11 @@ Starter app for learning `javascript,jquery,css` project.
 
 ## First Time
 
+### Starting App
+Download this starting project for following along this project 
+https://github.com/rupeshtiwari/javascript-web-application/releases/tag/Starter
+
+
 Open `command promt or powershell or visual studio code terminal` and run below script to get this project at your box
 
 - Run below script to download the code to your box
