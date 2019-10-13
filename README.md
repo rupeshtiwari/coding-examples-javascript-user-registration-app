@@ -1,11 +1,18 @@
 # Welcome to the Javascript HTML CSS jQery starter app
 
-Before you do this project lets understand what is autonomous component please watch below course: 
-https://www.youtube.com/watch?v=xRiM_tJqzAg&list=PLZed_adPqIJrL-BW84lV03K6MZANFj89V
+Before watching this video make sure to watch 
+1) https://www.youtube.com/playlist?list=PLZed_adPqIJpo5MmmJNmwpTsovBiAHO78 (Create Web Application- Workshop | Demo | Node.js | Mean.js  In this workshop you will understand the high level  approach of this project. Where we will discuss add/edit and delete use case)
 
+2) https://www.youtube.com/playlist?list=PLZed_adPqIJrL-BW84lV03K6MZANFj89V (Autonomous Component | Demo | Introduction | JavaScript)
 
+After watching this playlist please watch below playlist: 
 
+1)https://www.youtube.com/playlist?list=PLZed_adPqIJruQ-fd1MWBeLpKJ6RvdaBb
 
+In this tutorial, we're going to create a simple web app which organizes a list of users profiles. It demonstrates how to add user using test driven development. We are going to use standard tools & libraries on the front end such as JavaScript, Bootstrap, jQuery, Webpack, and of course, HTML/CSS. We will use Vs Code for writing code. You will learn how to write unit test. We will do test driven development and learn how to first write test then write production code. The entire application will be written in event driven style. We will use pub-sub library to communicate between autonomous components(https://www.youtube.com/watch?v=xRiM_tJqzAg&list=PLZed_adPqIJrL-BW84lV03K6MZANFj89V) using events / messages. We will follow Single Responsibility Principle from SOLID design principles (https://www.youtube.com/watch?v=99EAJRDqsOM&list=PLZed_adPqIJoMn7uhD7IlYTjpJI3fsLd2) and write clean  code.
+
+Startup App: https://github.com/rupeshtiwari/Training-JavaScript-App-Starter/tree/master
+Workshop Source Code:  https://github.com/rupeshtiwari/Training-JavaScript-App-Starter/tree/workshop-1
 
 
 Starter app for learning `javascript,jquery,css` project.
