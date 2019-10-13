@@ -1,5 +1,13 @@
 # Welcome to the Javascript HTML CSS jQery starter app
 
+Before you do this project lets understand what is autonomous component please watch below course: 
+https://www.youtube.com/watch?v=xRiM_tJqzAg&list=PLZed_adPqIJrL-BW84lV03K6MZANFj89V
+
+
+
+
+
+
 Starter app for learning `javascript,jquery,css` project.
 
 ## First Time
