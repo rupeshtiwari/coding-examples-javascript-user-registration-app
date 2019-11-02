@@ -11,10 +11,15 @@ function showUserInTable(message, user) {
   const $tableBody = $('#userList').find('tbody');
 
   // create a tr
-  const $tr = $(`<tr> <td> ${user.id} </td>  <td> ${user.name} </td></tr>`);
+  const $tr = $(
+    `<tr> <th scope="row"> ${user.id} </th>  <td> ${user.name} </td></tr>`
+  );
 
   // append tr
   $tableBody.append($tr);
+
+  // clear input
+  $('#name').val('');
 }
 
 exports.module = { showUserInTable };

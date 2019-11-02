@@ -1,6 +1,3 @@
- 
-const store = {
-  list: new WeakMap()
+export const store = {
+  list: new Map()
 };
-
-exports.module = {store};
