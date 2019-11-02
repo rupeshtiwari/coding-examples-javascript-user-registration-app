@@ -12,7 +12,7 @@ export function publishDeleteUser() {
     return false;
   }
 
-  const userId = $(this).data('userId');
+  const userId = $(this).data('userid');
 
   $.publish(DELETE_USER, userId);
 }
