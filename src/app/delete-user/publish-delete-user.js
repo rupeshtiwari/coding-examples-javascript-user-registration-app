@@ -5,7 +5,6 @@ $(() => {
 });
 
 export function publishDeleteUser() {
-  debugger;
   const deleteSure = confirm('Are you sure?');
 
   if (!deleteSure) {
