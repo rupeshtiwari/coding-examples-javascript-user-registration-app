@@ -21,7 +21,31 @@ Workshop Source Code:  https://github.com/rupeshtiwari/Training-JavaScript-App-S
 
 Starter app for learning `javascript,jquery,css` project.
 
-## First Time
+## Controller Explaination
+
+👉 **Controller is the abstraction over the `DOM`**. 
+Any operation that we do on the DOM should be done by controller only. 
+Controller should not directly change `Store` object. 
+
+## Example: While typing on input box we want to validate.
+So controller will read the DOM value and create a `User Object` and publish a message thats it. 
+
+## Example: While submitting the `user form`
+**controller's job is to read the DOM** values and create `user object`
+and publish a `command` (`ADD_USER`) to save the `user` in the server. 
+
+### When Add_USER_SUCCESS happens
+**controller's job is to show the user value in the DOM**. 
+
+## Example: While deleting the `user`
+**controller's job is to read the `User Id` from the DOM**  
+and publish a `command` (`DELETE_USER`) to delete the `user` from the server. 
+
+### When DELETE_USER_SUCCESS happens
+**controller's job is to remove the user from the DOM**. 
+
+
+## First Time Setup
 
 ### Starting App
 Download this starting project for following along this project 
