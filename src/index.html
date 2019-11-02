@@ -1,25 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>JavaScript Intermediate Learning Sample App</title>
-    <link rel="icon" href="./favicon.ico?XXX" />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-tiny-pubsub/0.7.0/ba-tiny-pubsub.min.js"></script>
-  </head>
 
-  <body class="container">
-    <form class="form">
-       <!-- div.form-group>label{Name:}+input.form-control#name -->
-       <div class="form-group"><label for="">Name:</label><input type="text" class="form-control" id="name"></div>  
-    </form>
-    <button class="btn btn-primary">Hello</button>
-    <script src="app/main.js"></script>
-  </body>
+<head>
+  <title>JavaScript Intermediate Learning Sample App</title>
+  <link rel="icon" href="favicon.ico?XXX" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-tiny-pubsub/0.7.0/ba-tiny-pubsub.min.js"></script>
+
+  <script scr="app/main.js"></script>
+
+
+</head>
+
+<body class="container">
+  <form class="form">
+    <!-- div.form-group>label{Name:}+input.form-control#name -->
+    <div class="form-group"><label for="">Name:</label><input type="text" class="form-control" id="name"></div>
+  </form>
+  <button class="btn btn-primary" id="addUser">Submit</button>
+
+  <br>
+
+  <table id="userList" class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <!--Add User Rows-->
+    </tbody>
+
+  </table>
+
+
+</body>
+
+
 </html>
