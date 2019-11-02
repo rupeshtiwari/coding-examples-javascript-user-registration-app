@@ -1,3 +1,3 @@
-require('./on-add-user-success');
-require('./publish-add-user');
-require('./save-user-in-store');
+export * from './on-add-user-success';
+export * from './publish-add-user';
+export * from './save-user-in-store';

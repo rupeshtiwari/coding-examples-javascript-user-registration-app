@@ -1,4 +1,4 @@
-const { ADD_USER_SUCCESS } = require('../model/messages');
+import { ADD_USER_SUCCESS } from '../model/messages';
 
 /**
  * CONTROLLER
@@ -6,7 +6,7 @@ const { ADD_USER_SUCCESS } = require('../model/messages');
  */
 $.subscribe(ADD_USER_SUCCESS, showUserInTable);
 
-function showUserInTable(message, user) {
+export function showUserInTable(message, user) {
   // get the body of table
   const $tableBody = $('#userList').find('tbody');
 
@@ -21,5 +21,3 @@ function showUserInTable(message, user) {
   // clear input
   $('#name').val('');
 }
-
-exports.module = { showUserInTable };
