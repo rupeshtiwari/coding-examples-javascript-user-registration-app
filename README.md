@@ -110,6 +110,13 @@ and publish a `command` (`DELETE_USER`) to delete the `user` from the server.
 }
 ```
 
+## Steps
+
+1- Webpack
+2- Add User Form Validation
+3- Add User
+4- Delete User
+
 ## Compatibility
 
 It will not support any `ES6` Features

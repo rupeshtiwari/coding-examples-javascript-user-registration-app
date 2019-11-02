@@ -12,7 +12,9 @@ export function showUserInTable(message, user) {
 
   // create a tr
   const $tr = $(
-    `<tr> <th scope="row"> ${user.id} </th>  <td> ${user.name} </td></tr>`
+    `<tr> <th scope="row"> ${user.id} </th>  <td> ${user.name} </td> <td>     <button type="button" class="btn btn-default">
+    <span class="glyphicon glyphicon-remove delete-user" data-userid="${user.id}"></span> Trash 
+  </button> </td></tr>`
   );
 
   // append tr
