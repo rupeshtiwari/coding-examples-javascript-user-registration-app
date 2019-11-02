@@ -9,5 +9,5 @@ $.subscribe(DELETE_USER, deleteUserFromStore);
 
 export function deleteUserFromStore(message, userId) {
   store.list.delete(userId);
-  $.publish(DELETE_USER_SUCCESS, userId);
+  $.publish(DELETE_USER_SUCCESS, {userId});
 }
