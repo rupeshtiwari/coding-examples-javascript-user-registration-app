@@ -21,19 +21,34 @@ Workshop Source Code:  https://github.com/rupeshtiwari/Training-JavaScript-App-S
 
 Starter app for learning `javascript,jquery,css` project.
 
-## Controller Explaination
+## ☀️ Controller Explaination
 
 👉 **Controller is the abstraction over the `DOM`**. 
 Any operation that we do on the DOM should be done by controller only. 
 Controller should not directly change `Store` object. 
 
 ## Example: While typing on input box we want to validate.
-So controller will read the DOM value and create a `User Object` and publish a message thats it. 
+So controller will read the DOM value and create a `User Object` and publish a message (`ADD_USER_FORM_UPDATED`). 
+
+`ADD_USER_FORM_UPDATED message`
+```js
+{ 
+   type:'ADD_USER_FORM_UPDATED',
+   payload: { name:  'Rupesh Tiwari', emailId: 'info@rupeshtiwari.com'}
+}
+```
 
 ## Example: While submitting the `user form`
 **controller's job is to read the DOM** values and create `user object`
-and publish a `command` (`ADD_USER`) to save the `user` in the server. 
+and publish a `command` (`ADD_USER`) to save the `user` in the server.
 
+`ADD_USER message`
+```js
+{ 
+   type:'ADD_USER',
+   payload: { name:  'Rupesh Tiwari', emailId: 'info@rupeshtiwari.com', userId:'1'}
+}
+```
 ### When Add_USER_SUCCESS happens
 **controller's job is to show the user value in the DOM**. 
 
@@ -43,7 +58,13 @@ and publish a `command` (`DELETE_USER`) to delete the `user` from the server.
 
 ### When DELETE_USER_SUCCESS happens
 **controller's job is to remove the user from the DOM**. 
-
+`DELETE_USER message`
+```js
+{ 
+   type:'DELETE_USER',
+   payload: { userId: '1'}
+}
+```
 
 ## First Time Setup
 
