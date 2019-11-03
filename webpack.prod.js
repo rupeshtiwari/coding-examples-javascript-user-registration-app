@@ -2,7 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-  entry: './src/app/index.js',
+  entry: './src/client/app/index.js',
   output: {
     filename: 'bundle.js'
   },
@@ -20,8 +20,8 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: 'User Registration',
-      template: 'src/index.html',
-      favicon: 'src/favicon.ico'
+      template: 'src/client/index.html',
+      favicon: 'src/client/favicon.ico'
     })
   ]
 };

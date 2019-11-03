@@ -1,10 +1,11 @@
 {
   "name": "register",
   "version": "1.0.0",
-  "description": "",
+  "description": "User Registration JavaScript Application",
   "scripts": {
     "build": "webpack --config webpack.prod.js",
-    "start": "webpack-dev-server"
+    "serve": "webpack-dev-server",
+    "start": "node src/server"
   },
   "engines": {
     "node": "12.x"
@@ -14,10 +15,12 @@
   "license": "ISC",
   "dependencies": {
     "clean-webpack-plugin": "^3.0.0",
+    "express": "^4.17.1",
     "file-loader": "^4.2.0",
     "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0"
-  }
+  },
+  "devDependencies": {}
 }
