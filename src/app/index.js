@@ -1,3 +1,10 @@
+$ = new Proxy($, {
+  get(target, prop) {
+    console.log(prop);
+    return Reflect.get(...arguments);
+  }
+});
+
 export * from './alerts';
 export * from './model';
 export * from './add-user';

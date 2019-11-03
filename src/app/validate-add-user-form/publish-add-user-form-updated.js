@@ -18,7 +18,6 @@ export function publishValidUserForm() {
   }
 
   timeout = setTimeout(() => {
-    console.log('Form Updated');
     $.publish(ADD_USER_FORM_UPDATED, user);
-  }, 800);
+  }, 500);
 }

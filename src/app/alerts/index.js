@@ -12,7 +12,7 @@ $.subscribe(SHOW_ERROR, (message, error) => {
     .removeClass()
     .addClass('alert alert-danger')
     .show()
-    .html(error);
+    .html(`⛔️ ${error}`);
 });
 $.subscribe(HIDE_ERROR, () => {
   $('#alertMsg')
@@ -24,7 +24,7 @@ $.subscribe(SHOW_SUCCESS, (message, payload) => {
     .removeClass()
     .addClass('alert alert-success')
     .show()
-    .html(payload);
+    .html(`✅ ${payload}`);
 });
 $.subscribe(HIDE_SUCCESS, () => {
   $('#alertMsg')
@@ -36,7 +36,7 @@ $.subscribe(SHOW_INFO, (message, payload) => {
     .removeClass()
     .addClass('alert alert-info')
     .show()
-    .html(payload);
+    .html(`⚠️ ${payload}`);
 });
 $.subscribe(HIDE_SUCCESS, () => {
   $('#alertMsg')

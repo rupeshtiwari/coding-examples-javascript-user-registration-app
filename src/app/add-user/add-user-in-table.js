@@ -30,5 +30,5 @@ export function showUserInTable(message, user) {
   // clear input
   $('#name,#email').val('');
 
-  $.publish(SHOW_SUCCESS, `${user.name} added successfully!`);
+  $.publish(SHOW_SUCCESS, `Congrats ${user.name} added successfully!`);
 }
