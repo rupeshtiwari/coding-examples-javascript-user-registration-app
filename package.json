@@ -10,7 +10,7 @@
     "node": "12.x"
   },
   "keywords": [],
-  "author": "",
+  "author": "Rupesh Tiwari",
   "license": "ISC",
   "dependencies": {
     "clean-webpack-plugin": "^3.0.0",
