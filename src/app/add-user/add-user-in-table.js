@@ -12,14 +12,21 @@ export function showUserInTable(message, user) {
 
   // create a tr
   const $tr = $(
-    `<tr data-userid="${user.id}"> <th scope="row"> ${user.id} </th>  <td> ${user.name} </td> <td>     <button type="button" class="btn btn-error delete-user" data-userid="${user.id}">
-    <span class="glyphicon glyphicon-remove" ></span> Trash 
-  </button> </td></tr>`
+    `<tr data-userid="${user.id}">
+       <th scope="row"> ${user.id} </th>  
+       <td> ${user.name} </td> 
+       <td> ${user.email} </td> 
+       <td>   
+          <button type="button" class="btn btn-error delete-user" data-userid="${user.id}">
+            <span class="glyphicon glyphicon-remove" ></span> Trash 
+          </button> 
+      </td>
+    </tr>`
   );
 
   // append tr
   $tableBody.append($tr);
 
   // clear input
-  $('#name').val('');
+  $('#name,#email').val('');
 }
