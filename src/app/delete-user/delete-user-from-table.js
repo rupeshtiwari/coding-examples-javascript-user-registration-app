@@ -1,4 +1,4 @@
-import { DELETE_USER_SUCCESS } from '../model/messages';
+import { DELETE_USER_SUCCESS, SHOW_INFO } from '../model/messages';
 
 /**
  * CONTROLLER
@@ -10,4 +10,6 @@ export function deleteUserFromTable(message, { userId }) {
   $('#userList tbody') // go to body of table
     .find(`tr[data-userid=${userId}]`) // find row by userid
     .remove(); // remove entry
+
+  $.publish(SHOW_INFO, `User deleted successfully!`);
 }

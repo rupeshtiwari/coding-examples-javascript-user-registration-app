@@ -1,4 +1,4 @@
-import { ADD_USER_SUCCESS } from '../model/messages';
+import { ADD_USER_SUCCESS, SHOW_SUCCESS } from '../model/messages';
 
 /**
  * CONTROLLER
@@ -17,8 +17,8 @@ export function showUserInTable(message, user) {
        <td> ${user.name} </td> 
        <td> ${user.email} </td> 
        <td>   
-          <button type="button" class="btn btn-error delete-user" data-userid="${user.id}">
-            <span class="glyphicon glyphicon-remove" ></span> Trash 
+          <button type="button" class="btn btn-danger delete-user" data-userid="${user.id}">
+            <span class="glyphicon glyphicon-trash" ></span> Trash 
           </button> 
       </td>
     </tr>`
@@ -29,4 +29,6 @@ export function showUserInTable(message, user) {
 
   // clear input
   $('#name,#email').val('');
+
+  $.publish(SHOW_SUCCESS, `${user.name} added successfully!`);
 }

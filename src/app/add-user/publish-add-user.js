@@ -2,7 +2,7 @@
  *
  * Controller : abastraction is DOM
  */
-import { ADD_USER } from '../model/messages';
+import { ADD_USER, HIDE_ALL_ALERTS } from '../model/messages';
 import { User } from '../model/user';
 
 $(function() {
@@ -10,6 +10,8 @@ $(function() {
 });
 
 export function publishAddUser() {
+  $.publish(HIDE_ALL_ALERTS);
+
   const name = $('#name').val();
   const email = $('#email').val();
   const user = new User(name, email);

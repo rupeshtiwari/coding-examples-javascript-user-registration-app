@@ -1,17 +1,15 @@
-import { DELETE_USER } from '../model/messages';
+import { ADD_USER_FORM_UPDATED } from '../model/messages';
+import { User } from '../model/user';
 
 $(() => {
-  $('#userList').delegate('.delete-user', 'click', publishDeleteUser);
+  $('#userForm').delegate('input', 'input', publishValidUserForm);
 });
 
-export function publishDeleteUser() {
-  const deleteSure = confirm('Are you sure?');
+export function publishValidUserForm() {
+  const name = $('#name').val();
+  const email = $('#email').val();
 
-  if (!deleteSure) {
-    return false;
-  }
+  const user = new User(name, email);
 
-  const userId = $(this).data('userid');
-
-  $.publish(DELETE_USER, userId);
+  $.publish(ADD_USER_FORM_UPDATED, user);
 }
