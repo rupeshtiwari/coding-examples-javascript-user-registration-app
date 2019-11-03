@@ -4,17 +4,20 @@
   "description": "",
   "scripts": {
     "build": "webpack",
-    "start": "webpack-dev-server"
+    "start:dev": "webpack-dev-server",
+    "start": "webpack --config webpack.prod.js"
+  },
+  "engines": {
+    "node": "12.x"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "clean-webpack-plugin": "^3.0.0",
     "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0"
-  },
-  "dependencies": {}
+  }
 }
