@@ -1,5 +1,9 @@
 # Welcome to the Javascript HTML CSS jQery starter app
 
+View this app live in my Heroku account
+
+https://rupesh-user-registration.herokuapp.com/
+
 ## Before watching this video make sure to watch
 
 ### Add / Delete / Update Usecase explaination workshop
@@ -109,6 +113,13 @@ and publish a `command` (`DELETE_USER`) to delete the `user` from the server.
    payload: { userId: '1'}
 }
 ```
+
+## Steps
+
+1- Webpack
+2- Add User Form Validation
+3- Add User
+4- Delete User
 
 ## Compatibility
 
