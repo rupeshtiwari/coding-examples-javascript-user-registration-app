@@ -18,7 +18,8 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: 'User Registration',
-      template: 'src/index.html'
+      template: 'src/index.html',
+      favicon: 'src/favicon.ico'
     })
   ]
 };
