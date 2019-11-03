@@ -7,6 +7,14 @@ module.exports = {
     filename: 'bundle.js'
   },
   mode: 'production',
+  module: {
+    rules: [
+      {
+        test: /\.jpe?g$|\.ico$|\.gif$|\.png$|\.svg$|\.woff$|\.ttf$|\.wav$|\.mp3$/,
+        loader: 'file-loader?name=[name].[ext]' // <-- retain original file name
+      }
+    ]
+  },
   plugins: [
     // new CleanWebpackPlugin(['dist/*']) for < v2 versions of CleanWebpackPlugin
     new CleanWebpackPlugin(),
