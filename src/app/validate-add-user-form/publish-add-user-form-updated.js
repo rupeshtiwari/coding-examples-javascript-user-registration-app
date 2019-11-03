@@ -5,11 +5,20 @@ $(() => {
   $('#userForm').delegate('input', 'input', publishValidUserForm);
 });
 
+let timeout;
+
 export function publishValidUserForm() {
   const name = $('#name').val();
   const email = $('#email').val();
 
   const user = new User(name, email);
 
-  $.publish(ADD_USER_FORM_UPDATED, user);
+  if (timeout) {
+    clearTimeout(timeout);
+  }
+
+  timeout = setTimeout(() => {
+    console.log('Form Updated');
+    $.publish(ADD_USER_FORM_UPDATED, user);
+  }, 800);
 }
