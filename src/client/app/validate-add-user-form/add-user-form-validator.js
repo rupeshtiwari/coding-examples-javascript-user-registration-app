@@ -13,11 +13,11 @@ export function validateAddUserForm(message, user) {
   if (emailResult === true && nameResult === true) {
     $.publish(ADD_USER_FORM_VALID, user);
   } else {
-    if (typeof emailResult === 'string') {
-      return $.publish(ADD_USER_FORM_INVALID, emailResult);
-    }
     if (typeof nameResult === 'string') {
       return $.publish(ADD_USER_FORM_INVALID, nameResult);
+    }
+    if (typeof emailResult === 'string') {
+      return $.publish(ADD_USER_FORM_INVALID, emailResult);
     }
   }
 }
